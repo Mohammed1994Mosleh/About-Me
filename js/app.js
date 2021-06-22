@@ -1,5 +1,6 @@
 'use strict';
 alert('hello')
+var score = 0;
 let first_qustion1 = prompt('do you think iam 25?');
 first_qustion1 = first_qustion1.toLowerCase();
 
@@ -24,6 +25,7 @@ case 'no' :
     case 'n':
      alert('true');
      console.log('true');
+     score++;
      break;
 
 
@@ -49,6 +51,7 @@ switch (qustion2){
     case 'y' :  
         alert('exactly');
         console.log('exactly');
+        score++;
         break;
 case 'no' :
 case 'n':
@@ -86,6 +89,7 @@ case 'no' :
 case 'n':
      alert('yes bro');
      console.log('yes bro');
+     score++;
      break;
 
 
@@ -112,6 +116,7 @@ switch (qustion4){
     case 'y' :  
         alert('yes exactly');
         console.log('yes exactly');
+        score++;
         break;
 case 'no' :
 case 'n':
@@ -142,6 +147,7 @@ switch (qustion5){
     case 'y' :  
         alert('yes alot');
         console.log('yes alot');
+        score++;
         break;
 case 'no' :
 case 'n':
@@ -156,3 +162,86 @@ case 'n':
 
 let name = prompt('whats your name bro?');
 alert('Hello '+ name +' welcome to My Website' );
+
+
+
+
+
+// var age = prompt('gues my age?');
+// age = Number(age);
+// for (let i = 0; i < 4; i++) {
+
+//     if (age == 27) {
+//         alert('you guess man');
+        
+//          break;
+//     }else if (age > 27) {
+//         alert('too high');
+//         age = prompt('gues my age?');
+//         age = Number(age)
+//         // continue;
+//     } else if (age < 27) {
+//         alert('too low');
+//         age = prompt('gues my age?');
+//         age = Number(age)
+//     }else{
+//         alert('my age is 27');
+
+//     }
+
+// }
+var age = prompt('gues my age?');
+age = Number(age);
+for (var i = 1; i < 4; i++) {
+    if (age == 27) {
+        alert('correct answer');
+        console.log('correct answer');
+        score++;
+        break;
+    } else if (age > 27) {
+        alert('too high');
+        var age = prompt('gues my age?');
+        age = Number(age);
+    } else {
+        alert('too low');
+        var age = prompt('gues my age?');
+        age = Number(age);
+
+    }
+
+
+
+}
+
+
+
+for(let i=0 ; i<2 ;i++){
+let Fmeal = prompt('My faviorate faviorate meal is?')
+let x = ['shawirmah','munsaf','maqlubah','flafel']
+
+
+if (Fmeal == x[0] || Fmeal == x[1] || Fmeal == x[2] || Fmeal == x[3] ){
+    alert('good job');
+
+    console.log('good job');
+    score++;
+    break;
+}else {
+
+    alert('wrong answer hhhh')
+}
+if (i < 1){
+    continue;
+}
+    alert('I like: shawirmah, munsaf,maqlubah,flafel');
+   
+
+
+
+
+
+
+}
+alert('i come from joradn');
+
+alert(score);
