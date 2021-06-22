@@ -215,7 +215,7 @@ for (var i = 1; i < 4; i++) {
 
 
 
-for(let i=0 ; i<2 ;i++){
+for(let i=0 ; i<6 ;i++){
 let Fmeal = prompt('My faviorate faviorate meal is?')
 let x = ['shawirmah','munsaf','maqlubah','flafel']
 
@@ -230,7 +230,7 @@ if (Fmeal == x[0] || Fmeal == x[1] || Fmeal == x[2] || Fmeal == x[3] ){
 
     alert('wrong answer hhhh')
 }
-if (i < 1){
+if (i < 5){
     continue;
 }
     alert('I like: shawirmah, munsaf,maqlubah,flafel');
