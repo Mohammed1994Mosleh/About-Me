@@ -1,7 +1,7 @@
 'use strict';
 alert('hello')
 var score = 0;
-let first_qustion1 = prompt('do you think iam 25?');
+function firsquestion(){let first_qustion1 = prompt('do you think iam 25?');
 first_qustion1 = first_qustion1.toLowerCase();
 
 while (!(first_qustion1=="yes" || first_qustion1=="y" || first_qustion1=='no' || first_qustion1=='n')){
@@ -31,8 +31,11 @@ case 'no' :
 
 }
 }
+return;}
 
-let qustion2 = prompt('do you think chess is my best hobby?');
+
+
+function secondquestion() {let qustion2 = prompt('do you think chess is my best hobby?');
 qustion2 = qustion2.toLowerCase();
 
 while (!(qustion2=="yes" || qustion2=="y" || qustion2=='no' || qustion2=='n')){
@@ -62,10 +65,12 @@ case 'n':
 
 }
 }
+return;}
 
 
 
-let qustion3 = prompt('Iam married?');
+
+function thirdquestion() {let qustion3 = prompt('Iam married?');
 qustion3 = qustion3.toLowerCase();
 
 while (!(qustion3=="yes" || qustion3=="y" || qustion3=='no' || qustion3=='n')){
@@ -95,9 +100,10 @@ case 'n':
 
 }
 }
+return;}
 
 
-let qustion4 = prompt('I like to live in countryside ?');
+function fourthquestion() {let qustion4 = prompt('I like to live in countryside ?');
 qustion4 = qustion4.toLowerCase();
 
 while (!(qustion4=="yes" || qustion4=="y" || qustion4=='no' || qustion4=='n')){
@@ -127,8 +133,9 @@ case 'n':
 
 }
 }
+return;}
 
-let qustion5 = prompt('go with my friend anywhere have soft drink makes me happy?');
+function fifthquestion() {let qustion5 = prompt('go with my friend anywhere have soft drink makes me happy?');
 qustion5 = qustion5.toLowerCase();
 
 while (!(qustion5=="yes" || qustion5=="y" || qustion5=='no' || qustion5=='n')){
@@ -158,6 +165,7 @@ case 'n':
 
 }
 }
+return;}
 
 
 let name = prompt('whats your name bro?');
@@ -190,7 +198,7 @@ alert('Hello '+ name +' welcome to My Website' );
 //     }
 
 // }
-var age = prompt('gues my age?');
+function sixthquestion() { var age = prompt('gues my age?');
 age = Number(age);
 for (var i = 1; i < 4; i++) {
     if (age == 27) {
@@ -212,10 +220,11 @@ for (var i = 1; i < 4; i++) {
 
 
 }
+}
 
 
 
-for(let i=0 ; i<6 ;i++){
+function seventhquestion() {for(let i=0 ; i<6 ;i++){
 let Fmeal = prompt('My faviorate faviorate meal is?')
 let x = ['shawirmah','munsaf','maqlubah','flafel']
 
@@ -242,6 +251,16 @@ if (i < 5){
 
 
 }
+return;}
+
+firsquestion();
+secondquestion();
+thirdquestion();
+fourthquestion();
+fifthquestion();
+sixthquestion();
+seventhquestion();
 alert('i come from joradn');
+
 
 alert(score);
