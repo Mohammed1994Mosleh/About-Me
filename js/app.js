@@ -202,11 +202,16 @@ for (var i = 1; i < 4; i++) {
         alert('too high');
         var age = prompt('gues my age?');
         age = Number(age);
+
     } else {
         alert('too low');
         var age = prompt('gues my age?');
         age = Number(age);
 
+    }
+    if(i==3){
+
+        alert('my age is 27')
     }
 
 
